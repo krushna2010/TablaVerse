@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tabla Project | Experience the Rhythm</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- PREMIUM DARK THEME RESET --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        :root {
+            --bg-dark: #0A0908;
+            --clay-orange: #FF5A36;
+            --neon-gold: #F4AE3F;
+            --glass-white: rgba(255, 255, 255, 0.04);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --text-muted: #A0A0A0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #FFFFFF;
+            overflow-x: hidden;
+            background: radial-gradient(circle at 80% 20%, rgba(255, 90, 54, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 10% 80%, rgba(244, 174, 63, 0.1) 0%, transparent 40%),
+                        var(--bg-dark);
+        }
+
+        /* --- STYLISH NAVBAR WITH SEARCH --- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 8%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            background: linear-gradient(45deg, var(--clay-orange), var(--neon-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-center {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            background: var(--glass-white);
+            padding: 10px 25px;
+            border-radius: 50px;
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--neon-gold);
+        }
+
+        /* Search Bar Style */
+        .search-box {
+            background: var(--glass-white);
+            border: 1px solid var(--glass-border);
+            padding: 10px 20px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 0.9rem;
+            width: 180px;
+            transition: width 0.4s ease;
+        }
+
+        .search-box input:focus {
+            width: 240px;
+        }
+
+        .search-box input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* --- CINEMATIC HERO SECTION --- */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8% 80px 8%;
+            min-height: 80vh;
+            position: relative;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 600px;
+            z-index: 5;
+        }
+
+        .tag-group {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .tagline {
+            display: inline-block;
+            background: rgba(255, 90, 54, 0.1);
+            color: var(--clay-orange);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 90, 54, 0.2);
+        }
+
+        /* Founder Badge on Top */
+        .founder-tag {
+            background: rgba(244, 174, 63, 0.1);
+            color: var(--neon-gold);
+            border: 1px solid rgba(244, 174, 63, 0.2);
+        }
+
+        .hero-text h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;
+            line-height: 1.1;
+            font-weight: 800;
+            margin-bottom: 25px;
+            letter-spacing: -1px;
+        }
+
+        .hero-text h1 span {
+            background: linear-gradient(120deg, var(--clay-orange), var(--neon-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn-glow {
+            background: linear-gradient(45deg, var(--clay-orange), var(--neon-gold));
+            color: #0A0908;
+            padding: 16px 35px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            box-shadow: 0 8px 30px rgba(255, 90, 54, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-glow:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(255, 90, 54, 0.5);
+        }
+
+        /* --- 3D INTERACTIVE TABLA CONTROLLER --- */
+        .hero-visual {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .ripple-bg {
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 50%;
+            animation: pulse 4s infinite linear;
+        }
+
+        .instrument-container {
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .studio-pad {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+            border: 2px solid var(--glass-border);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+            transition: transform 0.1s;
+        }
+
+        .studio-pad:active {
+            transform: scale(0.95);
+        }
+
+        .inner-syahi {
+            width: 120px;
+            height: 120px;
+            background: #151515;
+            border-radius: 50%;
+            border: 4px solid #222;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 0 30px rgba(255, 90, 54, 0.2);
+            transition: border-color 0.2s;
+        }
+
+        .studio-pad:hover .inner-syahi {
+            border-color: var(--clay-orange);
+        }
+
+        .live-bol-output {
+            position: absolute;
+            bottom: -60px;
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #FFF, var(--neon-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(244, 174, 63, 0.4);
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.15s ease-out;
+        }
+
+        .live-bol-output.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- AUTOMATIC DYNAMIC DOCK SECTION --- */
+        .library-section {
+            padding: 60px 8%;
+            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.4));
+            text-align: center;
+        }
+
+        .library-section h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            margin-bottom: 35px;
+            letter-spacing: 1px;
+        }
+
+        .dock-container {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .premium-card {
+            background: var(--glass-white);
+            border: 1px solid var(--glass-border);
+            padding: 20px 45px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #FFF;
+            font-weight: 600;
+            letter-spacing: 1px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .premium-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--neon-gold);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(244, 174, 63, 0.1);
+        }
+
+        /* --- MODERN FOOTER --- */
+        footer {
+            padding: 40px 8%;
+            background: #050505;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        footer span {
+            color: #FFF;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* --- ANIMATIONS --- */
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 0.5; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+            100% { transform: scale(0.95); opacity: 0.5; }
+        }
+
+        @media (max-width: 968px) {
+            nav { flex-direction: column; gap: 20px; }
+            .nav-center { flex-direction: column; gap: 15px; }
+            .hero { flex-direction: column-reverse; text-align: center; gap: 70px; padding-top: 40px; }
+            .hero-text h1 { font-size: 2.8rem; }
+            .cta-group { justify-content: center; }
+            .ripple-bg { width: 320px; height: 320px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">TablaStudio.</div>
+        <div class="nav-center">
+            <ul class="nav-links" id="dynamicMenu">
+                </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Search Taals, Bols...">
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        
+        <div class="hero-text">
+            <div class="tag-group">
+                <div class="tagline">The Digital Acoustic Project</div>
+            </div>
+            <h1>The Sacred Code Of <span>Indian Beats.</span></h1>
+            <p>Step into an immersive archive of Indian classical rhythm. Explore structure across centuries-old Gharanas, decode complex syllables, and experience the timeless engineering of the ultimate percussion instrument.</p>
+            
+            <div class="cta-group">
+                <a href="#library" class="btn-glow">Launch Library</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="ripple-bg"></div>
+            <div class="instrument-container" id="tablaPad">
+                <div class="studio-pad">
+                    <div class="inner-syahi"></div>
+                </div>
+            </div>
+            <div class="live-bol-output" id="bolText">DHA</div>
+        </div>
+
+    </section>
+
+    <section class="library-section" id="library">
+        <h2>Uncover the Library</h2>
+        <div class="dock-container" id="folderLinksContainer">
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TABLA Project. Crafted with passion. Founded by <span>Krushna Pawar</span>.</p>
+    </footer>
+
+    <script>
+        // SMART INTEGRATION ARRAY
+        const myFolderFiles = [
+            { displayName: "Teental", fileName: "teental.html" },
+            { displayName: "Dadra", fileName: "dadra.html" },
+            { displayName: "Keherwa", fileName: "keherwa.html"},
+            { displayName: "kayda treetal", fileName:"kaydat.html"}
+        ];
+
+        const container = document.getElementById('folderLinksContainer');
+        const menu = document.getElementById('dynamicMenu');
+
+        myFolderFiles.forEach(file => {
+            // Main Cards
+            const card = document.createElement('a');
+            card.href = file.fileName;
+            card.className = 'premium-card';
+            card.innerText = file.displayName;
+            container.appendChild(card);
+
+            // Navbar links
+            const listItem = document.createElement('li');
+            const navLink = document.createElement('a');
+            navLink.href = file.fileName;
+            navLink.innerText = file.displayName.split(' ')[0];
+            listItem.appendChild(navLink);
+            menu.appendChild(listItem);
+        });
+
+        // INTERACTIVE VISUAL GENERATOR
+        const pad = document.getElementById('tablaPad');
+        const bolText = document.getElementById('bolText');
+        const syllables = ['DHĀ', 'DHIṄ', 'GE', 'NĀ', 'TĀ', 'TIRKIT', 'TA'];
+
+        pad.addEventListener('click', () => {
+            const randomBol = syllables[Math.floor(Math.random() * syllables.length)];
+            bolText.classList.remove('active');
+            setTimeout(() => {
+                bolText.innerText = randomBol;
+                bolText.style.left = `${Math.random() * 40 + 30}%`;
+                bolText.classList.add('active');
+            }, 50);
+        });
+    </script>
+</body>
+</html>

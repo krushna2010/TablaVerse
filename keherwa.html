@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keherwa Taal - The Tabla Project</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --clay-brown: #8C4A32;
+            --dark-charcoal: #1A1A1A;
+            --soft-cream: #FDFBF7;
+            --light-gold: #F4EEE1;
+        }
+
+        body {
+            background-color: var(--soft-cream);
+            color: var(--dark-charcoal);
+            padding: 40px 10%;
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--clay-brown);
+            font-weight: 600;
+            margin-bottom: 30px;
+            transition: transform 0.2s;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--dark-charcoal);
+            margin-bottom: 10px;
+        }
+
+        .taal-meta {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+            border-left: 3px solid var(--clay-brown);
+            padding-left: 15px;
+        }
+
+        /* --- THE TAAL TABLE --- */
+        .table-container {
+            overflow-x: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: var(--light-gold);
+            font-family: 'Cinzel', serif;
+            color: var(--clay-brown);
+            font-weight: 700;
+        }
+
+        .vibhag-1 { background-color: #fafafa; }
+        .vibhag-2 { background-color: #ffffff; }
+
+        tr:hover {
+            background-color: #f1ebd9 !important;
+        }
+
+        .bol-hindi {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #000;
+        }
+
+        .bol-eng {
+            font-style: italic;
+            color: #444;
+        }
+
+        .play-btn {
+            background: var(--clay-brown);
+            color: white;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .play-btn:hover {
+            background: #723b27;
+        }
+
+        /* --- INFO CARDS --- */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .info-card {
+            background: var(--light-gold);
+            padding: 25px;
+            border-radius: 6px;
+        }
+
+        .info-card h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--clay-brown);
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 20px 5%; }
+            .info-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+
+    <h1>Keherwa Taal (कहरवा ताल)</h1>
+    <p class="taal-meta">8 Beats (Matras) | 2 Sections (Vibhags) | The Groove of Indian Popular Music</p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Matra (Beat)</th>
+                    <th>Devanagari (हिन्दी/मराठी)</th>
+                    <th>English Transliteration</th>
+                    <th>Sign (Tali/Khali)</th>
+                    <th>Listen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="vibhag-1">
+                    <td><strong>1</strong></td>
+                    <td class="bol-hindi">धा</td>
+                    <td class="bol-eng">Dhā</td>
+                    <td>Sam / Taali (1)</td>
+                    <td><button class="play-btn" onclick="playSound('dha')">Play</button></td>
+                </tr>
+                <tr class="vibhag-1">
+                    <td><strong>2</strong></td>
+                    <td class="bol-hindi">गे</td>
+                    <td class="bol-eng">Ge</td>
+                    <td>-</td>
+                    <td><button class="play-btn" onclick="playSound('ge')">Play</button></td>
+                </tr>
+                <tr class="vibhag-1">
+                    <td><strong>3</strong></td>
+                    <td class="bol-hindi">ना</td>
+                    <td class="bol-eng">Nā</td>
+                    <td>-</td>
+                    <td><button class="play-btn" onclick="playSound('na')">Play</button></td>
+                </tr>
+                <tr class="vibhag-1">
+                    <td><strong>4</strong></td>
+                    <td class="bol-hindi">तिं</td>
+                    <td class="bol-eng">Tiṅ</td>
+                    <td class="bol-eng">taa </td>
+                    <td>-</td>
+                    <td><button class="play-btn" onclick="playSound('tin')">Play</button></td>
+                </tr>
+
+                <tr class="vibhag

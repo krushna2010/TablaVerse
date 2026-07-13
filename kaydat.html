@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teental Kayda - The Tabla Project</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        :root { --clay-brown: #8C4A32; --dark-charcoal: #1A1A1A; --soft-cream: #FDFBF7; --light-gold: #F4EEE1; }
+        body { background-color: var(--soft-cream); color: var(--dark-charcoal); padding: 40px 10%; }
+        .back-btn { display: inline-block; text-decoration: none; color: var(--clay-brown); font-weight: 600; margin-bottom: 30px; transition: transform 0.2s; }
+        .back-btn:hover { transform: translateX(-5px); }
+        h1 { font-family: 'Cinzel', serif; font-size: 2.5rem; color: var(--dark-charcoal); margin-bottom: 10px; }
+        .taal-meta { font-size: 1.1rem; color: #666; margin-bottom: 40px; border-left: 3px solid var(--clay-brown); padding-left: 15px; }
+        .table-container { overflow-x: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 40px; }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th, td { padding: 15px 20px; border-bottom: 1px solid #eee; }
+        th { background-color: var(--light-gold); font-family: 'Cinzel', serif; color: var(--clay-brown); font-weight: 700; }
+        .vibhag-1, .vibhag-3 { background-color: #fafafa; }
+        .vibhag-2, .vibhag-4 { background-color: #ffffff; }
+        .bol-hindi { font-size: 1.2rem; font-weight: 500; color: #000; letter-spacing: 1px; }
+        .bol-eng { font-style: italic; color: #444; font-size: 1.05rem; }
+        .info-card { background: var(--light-gold); padding: 25px; border-radius: 6px; margin-top: 20px; }
+        .info-card h3 { font-family: 'Cinzel', serif; color: var(--clay-brown); margin-bottom: 12px; }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+
+    <h1>Teental Kaayda (दिल्ली घराना)</h1>
+    <p class="taal-meta">Theme Composition | Structured Variations | Foundation for Solo Performance</p>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Vibhag (Section)</th>
+                    <th>Matras</th>
+                    <th>Devanagari (हिन्दी/मराठी)</th>
+                    <th>English Transliteration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="vibhag-1">
+                    <td><strong>Bhag 1 (Bhari)</strong></td>
+                    <td>1 - 4</td>
+                    <td class="bol-hindi">धा धा टिट | धा धा धिं ना</td>
+                    <td class="bol-eng">Dhā Dhā Ṭiṭe | Dhā Dhā Dhiṅ Nā</td>
+                </tr>
+                <tr class="vibhag-2">
+                    <td><strong>Bhag 2 (Bhari)</strong></td>
+                    <td>5 - 8</td>
+                    <td class="bol-hindi">धा धा टिट | ता ता तिं ना</td>
+                    <td class="bol-eng">Dhā Dhā Ṭiṭe | Tā Tā Tiṅ Nā</td>
+                </tr>
+                <tr class="vibhag-3">
+                    <td><strong>Bhag 3 (Khali)</strong></td>
+                    <td>9 - 12</td>
+                    <td class="bol-hindi">ता ता टिट | ता ता तिं ना</td>
+                    <td class="bol-eng">Tā Tā Ṭiṭe | Tā Tā Tiṅ Nā</td>
+                </tr>
+                <tr class="vibhag-4">
+                    <td><strong>Bhag 4 (Bhari)</strong></td>
+                    <td>13 - 16</td>
+                    <td class="bol-hindi">धा धा टिट | धा धा धिं ना</td>
+                    <td class="bol-eng">Dhā Dhā Ṭiṭe | Dhā Dhā Dhiṅ Nā</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="info-card">
+        <h3>What is a Kaayda?</h3>
+<p>Kayda means "rule" or "discipline." It is a composition that originated in the Delhi Gharana. A Kayda is built around a main theme (mukhda), and all its variations (paltas) are created by rearranging and developing only the bols (syllables) of that original theme. The fundamental rule is that no new or external bols may be added; every variation must use only the bols from the original composition</p>
+    </div>
+
+</body>
+</html>
