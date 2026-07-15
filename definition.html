@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Definitions - The Tabla Project</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --clay-brown: #8C4A32;
+            --dark-charcoal: #1A1A1A;
+            --soft-cream: #FDFBF7;
+            --light-gold: #F4EEE1;
+        }
+
+        body {
+            background-color: var(--soft-cream);
+            color: var(--dark-charcoal);
+            padding: 40px 10%;
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--clay-brown);
+            font-weight: 600;
+            margin-bottom: 30px;
+            transition: transform 0.2s;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--dark-charcoal);
+            margin-bottom: 10px;
+        }
+
+        .taal-meta {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+            border-left: 3px solid var(--clay-brown);
+            padding-left: 15px;
+        }
+
+        .def-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            border-left: 5px solid var(--clay-brown);
+        }
+
+        .def-title {
+            font-family: 'Cinzel', serif;
+            color: var(--clay-brown);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .lang-block {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .lang-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .marathi { color: #2b2b2b; font-weight: 500; }
+        .hindi { color: #444444; }
+        .english { color: #666666; font-style: italic; }
+
+        .lang-label.ma { color: #c97d18; }
+        .lang-label.hi { color: #b84d28; }
+        .lang-label.en { color: #5c7585; }
+
+        @media (max-width: 768px) {
+            body { padding: 20px 5%; }
+            .def-container { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+
+    <h1>पारिभाषिक व्याख्या (Definitions)</h1>
+    <p class="taal-meta">Core Concepts and Technical Terms of Tabla Playing</p>
+
+    <div class="def-container">
+        <div class="def-title">१. कायदा (Kaayda)</div>
+        <div class="lang-block">
+            <span class="lang-label ma">मराठी (Original)</span>
+            <p class="marathi">उर्दू भाषे मध्ये कायदा म्हणजे नियम. विशिष्ट व अक्षराचा बोलसमूह ज्याची बांधणी तालाला अनुसरून सम, खाली, टाळी अशा भागांमध्ये वर्तित नियमबद्ध रचना म्हणजेच कायदा. कायद्याच्या मुखातील बोलचा आधार घेऊन त्याचे पलटे बनविले जातात आणि शेवटी कायदा तिहाईने संपविला जातो. कायदा हा विलंबित किंवा मध्यलयीत दुगुण किंवा चौगुणीत वाजविला जातो.</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label hi">हिंदी अनुवाद (Hindi)</span>
+            <p class="hindi">उर्दू भाषा में कायदा का अर्थ 'नियम' होता है। विशिष्ट वर्णों या अक्षरों का ऐसा बोल-समूह जिसकी रचना ताल के अनुसार सम, खाली और ताली जैसे विभागों में नियमबद्ध रूप से की जाती है, कायदा कहलाता है। कायदे के मुख्य मुखड़े (मूल बोल) का आधार लेकर उसके विभिन्न पलटे बनाए जाते हैं और अंत में तिहाई बजाकर कायदे को समाप्त किया जाता है। कायदा विलंबित या मध्य लय में दुगुन अथवा चौगुन गति में बजाया जाता है।</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label en">English Translation</span>
+            <p class="english">In the Urdu language, 'Kaayda' means a rule or regulation. It is a structured and rule-bound composition of specific syllables (bols) arranged in accordance with the rhythm's components like Sam, Khali, and Taali. Using the core theme (Mukhda) of the Kaayda as a foundation, various variations (Paltas) are expanded, and it is concluded with a Tihai. A Kaayda is typically performed in Vilambit (slow) or Madhya (medium) tempo in double (Dugun) or quadruple (Chaugun) speeds.</p>
+        </div>
+    </div>
+
+    <div class="def-container">
+        <div class="def-title">२. रेला (Rela)</div>
+        <div class="lang-block">
+            <span class="lang-label ma">मराठी (Original)</span>
+            <p class="marathi">रेला या शब्दाचा अर्थ प्रवाह असा आहे. ज्या रचनेमधील बोल शीघ्र (द्रुत) गतीने म्हणू व वाजवू शकतात. रेला म्हणजे छोट्या बोलसमूहांची केलेली अशी रचना जी चौपटीत व आठपटीतही अतिशय तयारीने वाजविता येते. प्रत्येक बोलाची अखेर व प्रारंभ एकमेकात गुंफले गेल्यामुळे 'रव' निर्माण करणाऱ्या प्रकारास रेला म्हणतात.</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label hi">हिंदी अनुवाद (Hindi)</span>
+            <p class="hindi">रेला शब्द का अर्थ 'प्रवाह' (flow) होता है। जिस रचना के बोल अत्यंत तीव्र (द्रुत) गति से बोले और बजाए जा सकते हैं, उसे रेला कहते हैं। रेला छोटे-छोटे बोल-समूहों की एक ऐसी संरचना है जिसे चौगुन और अठगुन की अति द्रुत लय में बहुत ही स्पष्टता और तैयारी के साथ बजाया जाता है। इसमें प्रत्येक बोल का अंत और अगले बोल का आरंभ आपस में इस तरह गुंथा होता है कि एक निरंतर ध्वनि का प्रवाह (रव) उत्पन्न होता है।</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label en">English Translation</span>
+            <p class="english">The word 'Rela' signifies a continuous flow or torrent. It refers to a swift composition whose syllables can be recited and played at a very fast (Drut) tempo. A Rela consists of small clusters of bols woven together so tightly that it can be played seamlessly in quadruple (Chaugun) or octuple (Athgun) speeds. The end of one syllable merges perfectly into the beginning of the next, producing a rapid, rolling sound effect known as 'Rav'.</p>
+        </div>
+    </div>
+
+    <div class="def-container">
+        <div class="def-title">३. पलटा (Palta)</div>
+        <div class="lang-block">
+            <span class="lang-label ma">मराठी (Original)</span>
+            <p class="marathi">कायद्यातील शब्दांना उलट-सुलट करून स्वरमय अंतिम शब्द तसेच ठेवून तयार होणाऱ्या व खाली-भरी युक्त रचनेस 'पलटा' असे म्हणतात.</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label hi">हिंदी अनुवाद (Hindi)</span>
+            <p class="hindi">कायदे के मूल वर्णों या शब्दों को उलट-पुलट कर (परिवर्तित कर), अंतिम अक्षरों के ढाँचे को समान रखते हुए, जो खाली और भरी के नियमों के अनुसार नई रचना बनती है, उसे 'पलटा' कहा जाता है।</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label en">English Translation</span>
+            <p class="english">A 'Palta' refers to a variation created by rearranging, inverting, or permuting the original syllables of a Kaayda, while keeping the structural ending intact. It strictly adheres to the systematic distribution of Bhari (accented) and Khali (unaccented) sections.</p>
+        </div>
+    </div>
+
+    <div class="def-container">
+        <div class="def-title">४. तिहाई (Tihai)</div>
+        <div class="lang-block">
+            <span class="lang-label ma">मराठी (Original)</span>
+            <p class="marathi">सर्वसाधारणपणे 'धा' ने संपणारा बोलसमूह समान अंतराने तीन वेळा वाजवून जेव्हा शेवटचा 'धा' समेवर येतो, तेव्हा त्या रचनेस तिहाई असे म्हणतात.</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label hi">हिंदी अनुवाद (Hindi)</span>
+            <p class="hindi">सामान्यतः 'धा' वर्ण पर समाप्त होने वाले किसी बोल-समूह को समान विश्रांति (अंतराल) के साथ लगातार तीन बार बजाकर जब अंतिम 'धा' को ठीक ताल की पहली मात्रा यानी सम पर लाया जाता है, तो उस सुंदर रचना को 'तिहाई' कहते हैं।</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label en">English Translation</span>
+            <p class="english">A 'Tihai' is a rhythmic phrase, usually concluding with the syllable 'Dha', that is repeated three times with equal mathematical intervals such that the final 'Dha' lands precisely on the 'Sam' (the first beat of the time cycle).</p>
+        </div>
+    </div>
+
+    <div class="def-container">
+        <div class="def-title">५. मुखडा (Mukhda)</div>
+        <div class="lang-block">
+            <span class="lang-label ma">मराठी (Original)</span>
+            <p class="marathi">समेपासून किंवा समेनंतर सुरुवात करून पुन्हा समेवर येऊन पडणाऱ्या आकर्षक रचनेस मुखडा असे म्हणतात.</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label hi">हिंदी अनुवाद (Hindi)</span>
+            <p class="hindi">सम से कुछ मात्रा पहले या सम के तुरंत बाद से शुरू करके, एक छोटा आवर्तन लेते हुए पुनः आकर्षक रूप से सम पर आकर मिलने वाली संक्षिप्त रचना को 'मुखड़ा' कहा जाता है।</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label en">English Translation</span>
+            <p class="english">A 'Mukhda' is a brief, catchy, and striking rhythmic phrase that starts either just before or after the Sam and culminates elegantly back onto the 'Sam' to establish the entry of the main theme.</p>
+        </div>
+    </div>
+
+    <div class="def-container">
+        <div class="def-title">६. लग्गी (Laggi)</div>
+        <div class="lang-block">
+            <span class="lang-label ma">मराठी (Original)</span>
+            <p class="marathi">साधारणपणे दादरा, कहरवा आणि रूपक या तालात द्रुत किंवा चौपटीत वाजविल्या जाणाऱ्या आकर्षक रचनांना लग्गी असे म्हणतात. लग्गीच्या कारणाने कायद्या प्रमाणे विस्तार करता येतो.</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label hi">हिंदी अनुवाद (Hindi)</span>
+            <p class="hindi">आमतौर पर दादरा, कहरवा और रूपक जैसे छोटे तालों में द्रुत (तेज) लय या चौगुन गति में बजाई जाने वाली अत्यंत चंचल और मधुर रचनाओं को 'लग्गी' कहते हैं। लग्गी के माध्यम से इन तालों का कायदे की तरह विस्तार किया जा सकता है।</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label en">English Translation</span>
+            <p class="english">A 'Laggi' is a lively, rhythmic composition played primarily in light classical talas like Dadra, Keherwa, and Rupak at a fast (Drut) tempo or quadruple speed. It serves as a tool to expand and embellish the rhythmic cycle, much like a Kaayda does in major talas.</p>
+        </div>
+    </div>
+
+    <div class="def-container">
+        <div class="def-title">७. उठान (Uthan)</div>
+        <div class="lang-block">
+            <span class="lang-label ma">मraाठी (Original)</span>
+            <p class="marathi">बनारस घराण्यात स्वतंत्र तबला वादनात सुरुवातीला बोलली जाणारी उठून जोरकस, आकर्षक अशी ठायसूट आणि तिहाईदार रचनेस उठान असे म्हणतात. कथ्थक नृत्याच्या उपनाट्य देखील उठान वाजविली जाते.</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label hi">हिंदी अनुवाद (Hindi)</span>
+            <p class="hindi">बनारस घराने में स्वतंत्र तबला वादन के प्रारंभ में बजाई जाने वाली एक अत्यंत ओजस्वी, जोरदार, आकर्षक तथा तिहाई से युक्त स्वतंत्र रचना को 'उठान' कहते हैं। कथक नृत्य में भी प्रस्तुति की शुरुआत या निकास दिखाने के लिए उठान बजाई जाती है।</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label en">English Translation</span>
+            <p class="english">Prominent in the Banaras Gharana, an 'Uthan' is a powerful, energetic, and attractive introductory composition featuring crisp syllables and a concluding Tihai, performed at the very beginning of a solo Tabla recital. It is also extensively used in Kathak dance accompaniment to mark the grand entry or commencement.</p>
+        </div>
+    </div>
+
+    <div class="def-container">
+        <div class="def-title">८. चक्रदार (Chakradar)</div>
+        <div class="lang-block">
+            <span class="lang-label ma">मराठी (Original)</span>
+            <p class="marathi">चक्रदार ही तिहाईसारखीच एक छोटी रचना बोलसमूह आणि त्याला जोडून तिहाई अशी रचना समान अंतराने तीनवेळा वाजवून शेवटच्या 'धा' मधीवर समेवर येतो तेव्हा त्या रचनेस चक्रदार असे म्हणतात. चक्रदाराचे साधा चक्रदार, फरामाईशी चक्रदार, कमाली चक्रदार असे विविध प्रकार आहेत.</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label hi">हिंदी अनुवाद (Hindi)</span>
+            <p class="hindi">चक्रदार भी तिहाई का ही एक बड़ा रूप है। जब किसी टुकड़े या बोल-समूह को उसकी आंतरिक तिहाई सहित, पूरे ढांचे को हूबहू तीन बार समान अंतराल के साथ बजाया जाता है और अंतिम 'धा' सम पर आकर गिरता है, तो उसे 'चक्रदार' कहते हैं। इसके कई प्रकार हैं जैसे— साधारण चक्रदार, फरमाइशी चक्रदार और कमाली चक्रदार।</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label en">English Translation</span>
+            <p class="english">A 'Chakradar' is a grand variation of a Tihai. It is a composite rhythmic phrase containing its own inner tihai, which is repeated exactly three times with uniform spacing so that the outermost final 'Dha' strikes perfectly on the Sam. It is classified into variants like Sadha Chakradar, Faramaishi Chakradar, and Kamali Chakradar.</p>
+        </div>
+    </div>
+
+    <div class="def-container">
+        <div class="def-title">९. मोहरा (Mohra)</div>
+        <div class="lang-block">
+            <span class="lang-label ma">मराठी (Original)</span>
+            <p class="marathi">मोहरा : समेवर येण्यासाठी वाजविली जाणारी मुखड्या प्रमाणेच छोटी मात्र सुंदर व आकर्षक असणारी रचना म्हणजे मोहरा होय. मोहरा आणि मुखडा ह्या दोन्ही रस-रचनांमध्ये विशेष फरक नसतो. मोहऱ्याचा उपयोग स्वतंत्र वादनात खास करून समेवर येण्यासाठी केला जातो.</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label hi">हिंदी अनुवाद (Hindi)</span>
+            <p class="hindi">सम पर आकर मिलने के लिए बजाई जाने वाली मुखड़े की ही तरह एक छोटी, अत्यंत सुंदर और कर्णप्रिय रचना को 'मोहरा' कहा जाता है। मोहरा और मुखड़ा इन दोनों रचनाओं में कोई बहुत बड़ा अंतर नहीं होता है। मोहरे का प्रयोग स्वतंत्र तबला वादन में विशेष रूप से सम को चमकाने या सम पर आवर्तन खत्म करने के लिए किया जाता है।</p>
+        </div>
+        <div class="lang-block">
+            <span class="lang-label en">English Translation</span>
+            <p class="english">A 'Mohra' is a short, beautiful, and striking composition, very similar to a Mukhda, designed specifically to resolve onto the Sam. Rhythmically, there is very little structural difference between a Mukhda and a Mohra. However, a Mohra is predominantly utilized in solo recitals as an elegant bridge to boldly emphasize the arrival of the 'Sam'.</p>
+        </div>
+    </div>
+
+</body>
+</html>

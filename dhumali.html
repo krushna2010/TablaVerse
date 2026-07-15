@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taal Keherwa - The Tabla Project</title>
+    <title>Taal Dhumali - The Tabla Project</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,9 +94,6 @@
             font-weight: 700;
         }
 
-        .vibhag-1 { background-color: #fafafa; }
-        .vibhag-2 { background-color: #ffffff; }
-
         .bol-hindi {
             font-size: 1.25rem;
             font-weight: 500;
@@ -129,8 +126,8 @@
 
     <a href="index.html" class="back-btn">← Back to Dashboard</a>
 
-    <h1>ताल कहरवा (Taal Keherwa)</h1>
-    <p class="taal-meta">8 Matras | 2 Vibhags (4-4) | Sign: X (1) , 0 (5)</p>
+    <h1>ताल धुमाळी (Taal Dhumali)</h1>
+    <p class="taal-meta">8 Matras | 4 Vibhags (2-2-2-2) | Taali: 3 (1, 3, 7) | Khali: 1 (5)</p>
 
     <h2 class="section-title">मूल ठेका (Main Theka)</h2>
     <div class="table-container">
@@ -140,11 +137,11 @@
                     <th>Matra</th>
                     <th>1 (X)</th>
                     <th>2</th>
-                    <th>3</th>
+                    <th>3 (2)</th>
                     <th>4</th>
                     <th>5 (0)</th>
                     <th>6</th>
-                    <th>7</th>
+                    <th>7 (3)</th>
                     <th>8</th>
                     <th>Action</th>
                 </tr>
@@ -152,83 +149,15 @@
             <tbody>
                 <tr>
                     <td><strong>Bol</strong></td>
-                    <td class="bol-hindi">धा</td>
-                    <td class="bol-hindi">गे</td>
-                    <td class="bol-hindi">न</td>
-                    <td class="bol-hindi">ती</td>
-                    <td class="bol-hindi">न</td>
-                    <td class="bol-hindi">क</td>
                     <td class="bol-hindi">धि</td>
-                    <td class="bol-hindi">न</td>
+                    <td class="bol-hindi">धि</td>
+                    <td class="bol-hindi">धा</td>
+                    <td class="bol-hindi">ती</td>
+                    <td class="bol-hindi">त्रक</td>
+                    <td class="bol-hindi">धीं</td>
+                    <td class="bol-hindi">धागे</td>
+                    <td class="bol-hindi">त्रक</td>
                     <td><button class="play-btn" onclick="playTaal('main')">Play</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <h2 class="section-title">लयकारी (Laya Variations)</h2>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Type</th>
-                    <th>Vibhag 1 (Matra 1-4) [X]</th>
-                    <th>Vibhag 2 (Matra 5-8) [0]</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="vibhag-1">
-                    <td><strong>Dugun (दुगुन) [I]</strong></td>
-                    <td class="bol-hindi">धागे नती | धागे नाती</td>
-                    <td class="bol-hindi">नक धीन | नक धीन</td>
-                    <td><button class="play-btn" onclick="playTaal('dugun1')">Play</button></td>
-                </tr>
-                <tr class="vibhag-2">
-                    <td><strong>Dugun (दुगुन) [II]</strong></td>
-                    <td class="bol-hindi">धागे नाती नक धीन</td>
-                    <td class="bol-hindi">धागे नाती नक धीन</td>
-                    <td><button class="play-btn" onclick="playTaal('dugun2')">Play</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <h2 class="section-title">कहरवा ताल की किस्में (Variations)</h2>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Kism No.</th>
-                    <th>Vibhag 1 (Matra 1-4) [X]</th>
-                    <th>Vibhag 2 (Matra 5-8) [0]</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="vibhag-1">
-                    <td><strong>किस्म १</strong></td>
-                    <td class="bol-hindi">धा धा धा ती</td>
-                    <td class="bol-hindi">नक नक धी ना</td>
-                    <td><button class="play-btn" onclick="playTaal('kism1')">Play</button></td>
-                </tr>
-                <tr class="vibhag-2">
-                    <td><strong>किस्म २</strong></td>
-                    <td class="bol-hindi">धा ती धा ती</td>
-                    <td class="bol-hindi">न क धी न</td>
-                    <td><button class="play-btn" onclick="playTaal('kism2')">Play</button></td>
-                </tr>
-                <tr class="vibhag-1">
-                    <td><strong>किस्म ३</strong></td>
-                    <td class="bol-hindi">धा तिं धा डा</td>
-                    <td class="bol-hindi">धा तिं ता डा</td>
-                    <td><button class="play-btn" onclick="playTaal('kism3')">Play</button></td>
-                </tr>
-                <tr class="vibhag-2">
-                    <td><strong>किस्म ४</strong></td>
-                    <td class="bol-hindi">धा तिं तक् ता</td>
-                    <td class="bol-hindi">ना तिं धा डा</td>
-                    <td><button class="play-btn" onclick="playTaal('kism4')">Play</button></td>
                 </tr>
             </tbody>
         </table>
@@ -236,8 +165,7 @@
 
     <script>
         function playTaal(taalType) {
-            console.log("Playing Keherwa: " + taalType);
-            // Future extension ke liye audio hooks ready hain
+            console.log("Playing Dhumali: " + taalType);
         }
     </script>
 </body>

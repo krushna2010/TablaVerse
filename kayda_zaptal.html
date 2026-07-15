@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taal Dadra - The Tabla Project</title>
+    <title>Kayda Zaptal - The Tabla Project</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,7 +61,7 @@
         .section-title {
             font-family: 'Cinzel', serif;
             color: var(--clay-brown);
-            margin: 30px 0 15px 0;
+            margin: 35px 0 15px 0;
             font-size: 1.6rem;
             border-bottom: 2px solid var(--light-gold);
             padding-bottom: 5px;
@@ -102,6 +102,7 @@
             font-weight: 500;
             color: #000;
             letter-spacing: 1px;
+            line-height: 1.8;
         }
 
         .play-btn {
@@ -129,118 +130,98 @@
 
     <a href="index.html" class="back-btn">← Back to Dashboard</a>
 
-    <h1>ताल दादरा (Taal Dadra)</h1>
-    <p class="taal-meta">6 Matras | 2 Vibhags (3-3) | Sign: X (1) , 0 (4)</p>
+    <h1>कायदा - झपताल (Kayda Zaptal)</h1>
+    <p class="taal-meta">10 Matras | 4 Vibhags (2-3-2-3) | Structural Composition</p>
 
-    <h2 class="section-title">मूल ठेका (Main Theka)</h2>
+    <h2 class="section-title">मूल कायदा (Original Theme / ORI)</h2>
     <div class="table-container">
         <table>
             <thead>
                 <tr>
-                    <th>Matra</th>
-                    <th>1 (X)</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4 (0)</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>Action</th>
+                    <th>Vibhag</th>
+                    <th>Bols (वर्ण)</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><strong>Bol</strong></td>
-                    <td class="bol-hindi">धा</td>
-                    <td class="bol-hindi">धी</td>
-                    <td class="bol-hindi">ना</td>
-                    <td class="bol-hindi">धा</td>
-                    <td class="bol-hindi">ती</td>
-                    <td class="bol-hindi">ना</td>
-                    <td><button class="play-btn" onclick="playTaal('main')">Play</button></td>
+                <tr class="vibhag-1">
+                    <td><strong>Vibhag 1 (Matra 1-2) [X]</strong></td>
+                    <td class="bol-hindi">धातीगेन धागेनधा</td>
+                </tr>
+                <tr class="vibhag-2">
+                    <td><strong>Vibhag 2 (Matra 3-5) [2]</strong></td>
+                    <td class="bol-hindi">तिगेन धातीगेन तिनाकेन</td>
+                </tr>
+                <tr class="vibhag-1">
+                    <td><strong>Vibhag 3 (Matra 6-7) [0]</strong></td>
+                    <td class="bol-hindi">तातीकेन ताकेनता</td>
+                </tr>
+                <tr class="vibhag-2">
+                    <td><strong>Vibhag 4 (Matra 8-10) [3]</strong></td>
+                    <td class="bol-hindi">तिकेन धातीगेन धिनागेन</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="section-title">लियकारी (Laya Variations)</h2>
+    <h2 class="section-title">पलटे (Paltas / Permutations)</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Structure Flow (चलन)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="vibhag-1">
+                    <td><strong>दोहरा</strong></td>
+                    <td class="bol-hindi">३ - ३ - २ - २</td>
+                    <td>-</td>
+                </tr>
+                <tr class="vibhag-2">
+                    <td><strong>१</strong></td>
+                    <td class="bol-hindi">धातीगेन धागेनधा तिगेन × ३ + तिनाकेन</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-1">
+                    <td><strong>२</strong></td>
+                    <td class="bol-hindi">धातीगिन × २ धागेनधा तिगीन तिनाकेन + ORI</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-2">
+                    <td><strong>३</strong></td>
+                    <td class="bol-hindi">धातिनगिन + ३ × २ + [२]</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-1">
+                    <td><strong>४</strong></td>
+                    <td class="bol-hindi">३ + धागेनधा तिर० तिरीगिन + ORI</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="section-title">तिहाई (Tihai)</h2>
     <div class="table-container">
         <table>
             <thead>
                 <tr>
                     <th>Type</th>
-                    <th>Matra 1-3</th>
-                    <th>Matra 4-6</th>
+                    <th>Tihai Structure</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="vibhag-1">
-                    <td><strong>Dugun (दुगुन) [I]</strong></td>
-                    <td class="bol-hindi">धाधी नाधा तीना</td>
-                    <td class="bol-hindi">धाधी नाधा तीnaा</td>
-                    <td><button class="play-btn" onclick="playTaal('dugun')">Play</button></td>
-                </tr>
-                <tr class="vibhag-2">
-                    <td><strong>Chaugun/Kism [II]</strong></td>
-                    <td class="bol-hindi">धाधी नाधा तीना</td>
-                    <td class="bol-hindi">धाधी नाधा तीना</td>
-                    <td><button class="play-btn" onclick="playTaal('chaugun')">Play</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <h2 class="section-title">दादरा ताल की किस्में (Variations)</h2>
-    <div class="table-container">
-        <table>
-            <thead>
                 <tr>
-                    <th>Kism No.</th>
-                    <th>Vibhag 1 (Matra 1-3) [X]</th>
-                    <th>Vibhag 2 (Matra 4-6) [0]</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="vibhag-1">
-                    <td><strong>किस्म १</strong></td>
-                    <td class="bol-hindi">धा धी नांना</td>
-                    <td class="bol-hindi">धा ती नांना</td>
-                    <td><button class="play-btn" onclick="playTaal('kism1')">Play</button></td>
-                </tr>
-                <tr class="vibhag-2">
-                    <td><strong>किस्म २</strong></td>
-                    <td class="bol-hindi">धा धीना नांना</td>
-                    <td class="bol-hindi">धा तीना नांना</td>
-                    <td><button class="play-btn" onclick="playTaal('kism2')">Play</button></td>
-                </tr>
-                <tr class="vibhag-1">
-                    <td><strong>किस्म ३</strong></td>
-                    <td class="bol-hindi">धा धीना नाडा</td>
-                    <td class="bol-hindi">धा तीना नाडा</td>
-                    <td><button class="play-btn" onclick="playTaal('kism3')">Play</button></td>
-                </tr>
-                <tr class="vibhag-2">
-                    <td><strong>किस्म ४</strong></td>
-                    <td class="bol-hindi">धिंना नाडा धाडा</td>
-                    <td class="bol-hindi">तिंना नाडा धाडा</td>
-                    <td><button class="play-btn" onclick="playTaal('kism4')">Play</button></td>
-                </tr>
-                <tr class="vibhag-1">
-                    <td><strong>किस्म ५</strong></td>
-                    <td class="bol-hindi">धाडा धाडा नाडा</td>
-                    <td class="bol-hindi">ताडा धाडा नाडा</td>
-                    <td><button class="play-btn" onclick="playTaal('kism5')">Play</button></td>
+                    <td><strong>Format</strong></td>
+                    <td class="bol-hindi">(२ + धाऽऽऽऽ) × ३</td>
+                    <td><button class="play-btn">Play</button></td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <script>
-        function playTaal(taalType) {
-            console.log("Playing: " + taalType);
-            // Audio trigger code future use ke liye ready hai
-        }
-    </script>
 </body>
 </html>

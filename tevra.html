@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taal Tewra - The Tabla Project</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --clay-brown: #8C4A32;
+            --dark-charcoal: #1A1A1A;
+            --soft-cream: #FDFBF7;
+            --light-gold: #F4EEE1;
+        }
+
+        body {
+            background-color: var(--soft-cream);
+            color: var(--dark-charcoal);
+            padding: 40px 10%;
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--clay-brown);
+            font-weight: 600;
+            margin-bottom: 30px;
+            transition: transform 0.2s;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--dark-charcoal);
+            margin-bottom: 10px;
+        }
+
+        .taal-meta {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+            border-left: 3px solid var(--clay-brown);
+            padding-left: 15px;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            color: var(--clay-brown);
+            margin: 30px 0 15px 0;
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--light-gold);
+            padding-bottom: 5px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px 18px;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: var(--light-gold);
+            font-family: 'Cinzel', serif;
+            color: var(--clay-brown);
+            font-weight: 700;
+        }
+
+        .bol-hindi {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #000;
+            letter-spacing: 1px;
+        }
+
+        .play-btn {
+            background: var(--clay-brown);
+            color: white;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .play-btn:hover {
+            background: #723b27;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 20px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+
+    <h1>ताल तेवरा (Taal Tewra)</h1>
+    <p class="taal-meta">7 Matras | 3 Vibhags (3-2-2) | Taali: 3 (1, 4, 6) | Khali: 0</p>
+
+    <h2 class="section-title">मूल ठेका (Main Theka)</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Matra</th>
+                    <th>1 (X)</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4 (2)</th>
+                    <th>5</th>
+                    <th>6 (3)</th>
+                    <th>7</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Bol</strong></td>
+                    <td class="bol-hindi">धा</td>
+                    <td class="bol-hindi">दि</td>
+                    <td class="bol-hindi">ता</td>
+                    <td class="bol-hindi">तिट</td>
+                    <td class="bol-hindi">कत</td>
+                    <td class="bol-hindi">गदि</td>
+                    <td class="bol-hindi">गन</td>
+                    <td><button class="play-btn" onclick="playTaal('main')">Play</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function playTaal(taalType) {
+            console.log("Playing Tewra: " + taalType);
+        }
+    </script>
+</body>
+</html>

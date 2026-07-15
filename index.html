@@ -65,19 +65,20 @@
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 20px;
             background: var(--glass-white);
             padding: 10px 25px;
             border-radius: 50px;
             border: 1px solid var(--glass-border);
             backdrop-filter: blur(10px);
+            flex-wrap: wrap;
         }
 
         .nav-links a {
             text-decoration: none;
             color: #FFFFFF;
             font-weight: 500;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             letter-spacing: 1px;
             transition: color 0.3s;
         }
@@ -86,7 +87,6 @@
             color: var(--neon-gold);
         }
 
-        /* Search Bar Style */
         .search-box {
             background: var(--glass-white);
             border: 1px solid var(--glass-border);
@@ -103,12 +103,12 @@
             outline: none;
             color: #fff;
             font-size: 0.9rem;
-            width: 180px;
+            width: 150px;
             transition: width 0.4s ease;
         }
 
         .search-box input:focus {
-            width: 240px;
+            width: 200px;
         }
 
         .search-box input::placeholder {
@@ -151,7 +151,6 @@
             border: 1px solid rgba(255, 90, 54, 0.2);
         }
 
-        /* Founder Badge on Top */
         .founder-tag {
             background: rgba(244, 174, 63, 0.1);
             color: var(--neon-gold);
@@ -202,7 +201,7 @@
             box-shadow: 0 12px 40px rgba(255, 90, 54, 0.5);
         }
 
-        /* --- 3D INTERACTIVE TABLA CONTROLLER --- */
+        /* --- INTERACTIVE CONTROLLER --- */
         .hero-visual {
             flex: 1;
             display: flex;
@@ -278,45 +277,67 @@
             transform: translateY(0);
         }
 
-        /* --- AUTOMATIC DYNAMIC DOCK SECTION --- */
+        /* --- AUTOMATIC DOCK GRID --- */
         .library-section {
-            padding: 60px 8%;
+            padding: 80px 8%;
             background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.4));
             text-align: center;
         }
 
         .library-section h2 {
             font-family: 'Cinzel', serif;
-            font-size: 2rem;
-            margin-bottom: 35px;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
             letter-spacing: 1px;
         }
 
+        .library-section p {
+            color: var(--text-muted);
+            margin-bottom: 45px;
+        }
+
         .dock-container {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
-            justify-content: center;
-            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .premium-card {
             background: var(--glass-white);
             border: 1px solid var(--glass-border);
-            padding: 20px 45px;
-            border-radius: 12px;
+            padding: 30px 20px;
+            border-radius: 16px;
             text-decoration: none;
             color: #FFF;
-            font-weight: 600;
-            letter-spacing: 1px;
             backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .premium-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .premium-card span {
+            font-size: 0.85rem;
+            color: var(--neon-gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .premium-card:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: var(--neon-gold);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(244, 174, 63, 0.1);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--clay-orange);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(255, 90, 54, 0.15);
         }
 
         /* --- MODERN FOOTER --- */
@@ -372,7 +393,7 @@
                 <div class="tagline">The Digital Acoustic Project</div>
             </div>
             <h1>The Sacred Code Of <span>Indian Beats.</span></h1>
-            <p>Step into an immersive archive of Indian classical rhythm. Explore structure across centuries-old Gharanas, decode complex syllables, and experience the timeless engineering of the ultimate percussion instrument.</p>
+            <p></p>
             
             <div class="cta-group">
                 <a href="#library" class="btn-glow">Launch Library</a>
@@ -393,6 +414,7 @@
 
     <section class="library-section" id="library">
         <h2>Uncover the Library</h2>
+        <p>Explore the building blocks of rhythm composition arranged in perfect order</p>
         <div class="dock-container" id="folderLinksContainer">
             </div>
     </section>
@@ -402,38 +424,51 @@
     </footer>
 
     <script>
-        // SMART INTEGRATION ARRAY
+        // --- o---
         const myFolderFiles = [
-            { displayName: "Teental", fileName: "teental.html" },
-            { displayName: "Dadra", fileName: "dadra.html" },
-            { displayName: "Keherwa", fileName: "keherwa.html"},
-            { displayName: "kayda treetal", fileName:"kaydat.html"}
+            { displayName: "Taal Dadra",fileName: "dadra.html" },
+            { displayName: "Taal Keherwa", tag: "8 Beats", fileName: "keherwa.html" },
+            { displayName: "Taal Rupak", tag: "7 Beats", fileName: "rupak.html" },
+            { displayName: "Taal Zaptal", tag: "10 Beats", fileName: "zaptal.html" },
+            { displayName: "Taal Dhumali", tag: "8 Beats (Folk)", fileName: "dhumali.html" },
+            { displayName: "Taal Treetal", tag: "16 Beats", fileName: "teental.html" },
+            { displayName: "Taal Tewra", tag: "7 Beats (Teevra)", fileName: "tevra.html" },
+            { displayName: "Taal Dipchandi", tag: "14 Beats", fileName: "dipchandi.html" },
+            { displayName: "Definitions", tag: "Core Concepts", fileName: "definition.html" },
+            { displayName: "Kayda Teental", tag: "Theme & Variations", fileName: "kayda.html" },
+            { displayName: "Kayda Zaptal", tag: "Structured Rules", fileName: "kayda_zaptal.html" },
+            { displayName: "Practice Bols", tag: "Practice" ,fileName: "practice.html"},
+            { displayName: "Uthan", tag:"Uthan" ,fileName: "Uthan"}
         ];
 
         const container = document.getElementById('folderLinksContainer');
         const menu = document.getElementById('dynamicMenu');
 
         myFolderFiles.forEach(file => {
-            // Main Cards
+            // Grid Cards generation
             const card = document.createElement('a');
             card.href = file.fileName;
             card.className = 'premium-card';
-            card.innerText = file.displayName;
+            card.innerHTML = `<h3>${file.displayName}</h3><span>${file.tag}</span>`;
             container.appendChild(card);
 
-            // Navbar links
+            // Navbar links (Short version dynamic addition)
             const listItem = document.createElement('li');
             const navLink = document.createElement('a');
             navLink.href = file.fileName;
-            navLink.innerText = file.displayName.split(' ')[0];
+            
+            // "Taal Dadra" me se "Dadra" nikalne ke liye clean display logic
+            let shortName = file.displayName.replace("Taal ", "").split(' ')[0];
+            navLink.innerText = shortName;
+            
             listItem.appendChild(navLink);
             menu.appendChild(listItem);
         });
 
-        // INTERACTIVE VISUAL GENERATOR
+        // INTERACTIVE VISUAL GENERATOR (Bols popup effect)
         const pad = document.getElementById('tablaPad');
         const bolText = document.getElementById('bolText');
-        const syllables = ['DHĀ', 'DHIṄ', 'GE', 'NĀ', 'TĀ', 'TIRKIT', 'TA'];
+        const syllables = ['DHĀ', 'DHIṄ', 'GE', 'NĀ', 'TĀ', 'TIRKIT', 'TUṄ'];
 
         pad.addEventListener('click', () => {
             const randomBol = syllables[Math.floor(Math.random() * syllables.length)];

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Bols (Riyaz) - The Tabla Project</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --clay-brown: #8C4A32;
+            --dark-charcoal: #1A1A1A;
+            --soft-cream: #FDFBF7;
+            --light-gold: #F4EEE1;
+        }
+
+        body {
+            background-color: var(--soft-cream);
+            color: var(--dark-charcoal);
+            padding: 40px 10%;
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--clay-brown);
+            font-weight: 600;
+            margin-bottom: 30px;
+            transition: transform 0.2s;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--dark-charcoal);
+            margin-bottom: 10px;
+        }
+
+        .taal-meta {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+            border-left: 3px solid var(--clay-brown);
+            padding-left: 15px;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            color: var(--clay-brown);
+            margin: 35px 0 15px 0;
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--light-gold);
+            padding-bottom: 5px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 15px 18px;
+            border-bottom: 1px solid #eee;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: var(--light-gold);
+            font-family: 'Cinzel', serif;
+            color: var(--clay-brown);
+            font-weight: 700;
+        }
+
+        .vibhag-1 { background-color: #fafafa; }
+        .vibhag-2 { background-color: #ffffff; }
+
+        .bol-hindi {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #000;
+            letter-spacing: 1px;
+            line-height: 1.8;
+        }
+
+        .play-btn {
+            background: var(--clay-brown);
+            color: white;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .play-btn:hover {
+            background: #723b27;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 20px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-btn">← Back to Dashboard</a>
+
+    <h1>सरावासाठी बोल (Practice Bols / Riyaz)</h1>
+    <p class="taal-meta">Tabla Hand-Speed Development & Clarity Exercises</p>
+
+    <h2 class="section-title">१. बुनियादी रियाज़ (Basic Patterns)</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 8%;">क्र. (No.)</th>
+                    <th style="width: 80%;">निकास बोल (Phrases Flow)</th>
+                    <th style="width: 12%;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="vibhag-1">
+                    <td><strong>१</strong></td>
+                    <td class="bol-hindi">धा धा ति ट <br> ता ता ति ट</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-2">
+                    <td><strong>२</strong></td>
+                    <td class="bol-hindi">धाधा तिट धाधा तिट <br> ताता तिट धाधा तिट</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-1">
+                    <td><strong>३</strong></td>
+                    <td class="bol-hindi">धाडतिर किट्टक ताडतिर किट्टक</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-2">
+                    <td><strong>४</strong></td>
+                    <td class="bol-hindi">गे गी तिट गे गी ना ना <br> के के तिट गे गी ना ना</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-1">
+                    <td><strong>५</strong></td>
+                    <td class="bol-hindi">धाधा तिरकिट ताता तिरकिट</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="section-title">२. निकास गति अभ्यास (Clarity & Speed Drills)</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 8%;">क्र. (No.)</th>
+                    <th style="width: 80%;">चलन बोल (Advanced Phrases)</th>
+                    <th style="width: 12%;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="vibhag-2">
+                    <td><strong>६</strong></td>
+                    <td class="bol-hindi">घीड़नग तिटतिट किड़नग तिट तिट</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-1">
+                    <td><strong>७</strong></td>
+                    <td class="bol-hindi">घीड़नग तिरकिट किड़नग तिरकिट</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-2">
+                    <td><strong>८</strong></td>
+                    <td class="bol-hindi">घीड़नग तिरकिट तकताड़ तिरकिट <br> किड़नग तिरकिट तकताड़ तिरकिट</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="section-title">३. पलटे एवं विशेष रचनाएँ (Extended Practice Variations)</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 8%;">क्र. (No.)</th>
+                    <th style="width: 80%;">रचना बोल (Variations)</th>
+                    <th style="width: 12%;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="vibhag-1">
+                    <td><strong>१</strong></td>
+                    <td class="bol-hindi">धाधा तिरकिट <br> ताता तिरकिट</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-2">
+                    <td><strong>२</strong></td>
+                    <td class="bol-hindi">धाड तिरकिट तक तिरकिट <br> ताड तिरकिट तक तिरकिट</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-1">
+                    <td><strong>३</strong></td>
+                    <td class="bol-hindi">
+                        धाडतिर किट्टक तकतिर किट्टक <br>
+                        तकतिर किट्टक तकतिर किट्टक <br>
+                        ताडतिर किट्टक तिरकिट तकतिर किट्टक <br>
+                        तकतिर किट्टक तकतिर किट्टक
+                    </td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-2">
+                    <td><strong>४</strong></td>
+                    <td class="bol-hindi">धाती गेन धाती गेन <br> ताती केन धाती गेन</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+                <tr class="vibhag-1">
+                    <td><strong>५</strong></td>
+                    <td class="bol-hindi">धा ति धा गे | धा ति न क |</td>
+                    <td><button class="play-btn">Play</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
